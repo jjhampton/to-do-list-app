@@ -528,3 +528,7 @@ button:active {
    background-image: -ms-linear-gradient(top, #78d665 0%, #9c573e 100%);
    color: #fff;
    }
+
+.buttonCompleted {
+  background-color: #265FB4;
+}
