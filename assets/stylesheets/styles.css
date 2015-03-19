@@ -502,7 +502,7 @@ button {
    font-family: helvetica, serif;
    text-decoration: none;
    vertical-align: middle;
-   float: right;
+   float: right; 
    }
 button:hover {
    border: 1px solid #0a3c59;
@@ -532,3 +532,4 @@ button:active {
 .buttonCompleted {
   background-color: #265FB4;
 }
+
