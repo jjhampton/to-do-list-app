@@ -5,7 +5,11 @@ This is a web-based 'To-Do-List' app.
 I'm writing this to practice working on basic HTML/CSS/Javascript along with manipulating the DOM.
 Coded entirely w/ vanilla Javascript and no jQuery.
 
-Currently a work-in-progress.  
+Currently a work-in-progress.
+
+15 April 2015:
+- Ran code through JSLint, corrected missing semi-colons syntax errors
+- Fixed bug where "Add Date" button reset page to "Add Task" UI even if no date was entered. 
 
 9 April 2015: 
 -Added input field keypress event handler for "Add Date" feature.
@@ -16,6 +20,8 @@ Currently a work-in-progress.
 
 Upcoming revisions: 
 Add "Edit" and "Delete" buttons for individual tasks
+Add Responsive Design for smaller screen sizes
+Use Local Storage to enable saving of tasks for user
 
 -----------------
 

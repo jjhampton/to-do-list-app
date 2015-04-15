@@ -26,7 +26,7 @@ var setTaskUI = function() {
   
   addTaskButton.addEventListener("click", addTask, false);
   taskInput.addEventListener("keypress", keypressListenerTask, false);
-}
+};
 
 // Function that adds user data onto the Tasks To Do List #tasklistToDo.  
 
@@ -39,7 +39,7 @@ var addTask = function () {
   var tasksOrderedListToDo = document.querySelector("#taskListToDo");
   
   if (newTaskName === "") {
-    alert("Please enter a task, otherwise you're just wasting time ^_^")
+    alert("Please enter a task, otherwise you're just wasting time ^_^");
   }
   else {    
     taskListItem.innerText = newTaskName;
@@ -106,14 +106,15 @@ var addDueDate = function () {
    
 
   if (dueDate === "") {
-    alert("Please enter a date, otherwise you're just wasting time ^_^")
+    alert("Please enter a date, otherwise you're just wasting time ^_^");
   }
   else {
     completeByMsg.innerText = "Complete by: " + dueDate;
     addButton("Mark Done!", "markdone", taskListItem);
     taskListItem.appendChild(completeByMsg);
+    setTaskUI();
   }
-  setTaskUI();
+  //setTaskUI();
 };
 
 //Function that calls another handler if enter key is pressed on input field during date input
@@ -126,6 +127,7 @@ var keypressListenerDate = function(e) {
 //Function that returns date formatted as in example:  01 January 2015. Reference http://stackoverflow.com/questions/3552461/how-to-format-javascript-date, username mrzmyr
 
 var formattedDate = function(date) {
+  var completeDate;
   var day = date.getDate();
   var monthNames = [
         "January", "February", "March",
